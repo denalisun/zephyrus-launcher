@@ -1,6 +1,8 @@
 ﻿using System.Net;
 using ZephyrusLauncher.Utilities;
 
+
+// Ik i should use the HttpClient but
 if (!Directory.Exists(Path.Combine(Directory.GetCurrentDirectory(), "Mods"))) {
     Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), "Mods"));
     using (WebClient client = new WebClient()) {

@@ -16,6 +16,7 @@ namespace ZephyrusLauncher.Utilities
         NONE,
         DLL_MOD,
         PAK_MOD,
+        PATCH_MOD,
         DISABLED_MOD
     }
 
@@ -109,10 +110,12 @@ namespace ZephyrusLauncher.Utilities
                 {
                     Mod newMod = new Mod(ModFile);
 
-                    if (ModFile.EndsWith(".dll") && !ModFile.EndsWith(".delayed.dll"))
+                    if (ModFile.EndsWith(".dll"))
                         newMod.ModType = ModType.DLL_MOD;
-                    else if (ModFile.EndsWith(".pak") || ModFile.EndsWith(".sig") || ModFile.EndsWith(".ucas") || ModFile.EndsWith(".utoc"))
+                    else if (ModFile.EndsWith(".pak"))
                         newMod.ModType = ModType.PAK_MOD;
+                    else if (ModFile.EndsWith(".zp"))
+                        newMod.ModType = ModType.PATCH_MOD;
 
                     mods.Add(newMod);
                 }
@@ -125,8 +128,8 @@ namespace ZephyrusLauncher.Utilities
         {
             string PakPath = Path.Combine(FortniteBuildPath, "FortniteGame\\Content\\Paks");
 
-            var sigFiles = Directory.GetFiles(PakPath, "*.sig", SearchOption.AllDirectories);
-            var smallestSig = sigFiles
+            string[] sigFiles = Directory.GetFiles(PakPath, "*.sig", SearchOption.AllDirectories);
+            string smallestSig = sigFiles
                 .Select(file => new FileInfo(file))
                 .OrderBy(fileInfo => fileInfo.Length)
                 .First().FullName;

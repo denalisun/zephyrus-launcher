@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Programming\\Rust\\zephyrus-launcher\\zephyrus-launcher.csproj": {}
+    "C:\\Users\\Aurora\\Programming\\C#\\zephyrus-launcher\\zephyrus-launcher.csproj": {}
   },
   "projects": {
-    "D:\\Programming\\Rust\\zephyrus-launcher\\zephyrus-launcher.csproj": {
+    "C:\\Users\\Aurora\\Programming\\C#\\zephyrus-launcher\\zephyrus-launcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Programming\\Rust\\zephyrus-launcher\\zephyrus-launcher.csproj",
+        "projectUniqueName": "C:\\Users\\Aurora\\Programming\\C#\\zephyrus-launcher\\zephyrus-launcher.csproj",
         "projectName": "zephyrus-launcher",
-        "projectPath": "D:\\Programming\\Rust\\zephyrus-launcher\\zephyrus-launcher.csproj",
-        "packagesPath": "C:\\Users\\carve\\.nuget\\packages\\",
-        "outputPath": "D:\\Programming\\Rust\\zephyrus-launcher\\obj\\",
+        "projectPath": "C:\\Users\\Aurora\\Programming\\C#\\zephyrus-launcher\\zephyrus-launcher.csproj",
+        "packagesPath": "C:\\Users\\Aurora\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aurora\\Programming\\C#\\zephyrus-launcher\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\carve\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Aurora\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
