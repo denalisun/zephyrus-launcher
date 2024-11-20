@@ -120,7 +120,7 @@ namespace ZephyrusLauncher.Utilities
                     mods.Add(newMod);
                 }
             }
-
+            
             return mods;
         }
 
